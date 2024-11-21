@@ -1,0 +1,15 @@
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: root
+      password: pr0y3ct1
+
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
